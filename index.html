@@ -16,12 +16,86 @@
 				<img src="img/logo.png" alt="trillo logo" class="logo" />
 
 				<form action="#" class="search">
-					<input type="text" class="search__input" placeholder="Search Hotels" />
+					<input type="text" class="search__input" placeholder="Search hotels" />
 					<button class="search__button">
 						<svg class="search__icon">
 							<use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
 						</svg>
 					</button>
+
+					<!-- SEARCH DROPDOWN MENU -->
+					<div class="search-dropdown">
+						<ul class="search-dropdown__list">
+							<li class="search-dropdown__item">
+								<a href="#" class="search-dropdown__link">
+									<svg class="search-dropdown__icon--bed">
+										<use xlink:href="img/sprite.svg#icon-bed"></use>
+									</svg>
+									<div class="search-dropdown__text">
+										<h3 class="search-dropdown__hotel-name">Hotel Pennsylvania</h3>
+										<div class="search-dropdown__location-container">
+											<svg class="search-dropdown__icon--pin">
+												<use xlink:href="img/sprite.svg#icon-location-pin"></use>
+											</svg>
+											<span class="search-dropdown__location">New York, New York</span>
+										</div>
+									</div>
+									<span class="search-dropdown__rating">8.7</span>
+								</a>
+							</li>
+							<li class="search-dropdown__item">
+								<a href="#" class="search-dropdown__link">
+									<svg class="search-dropdown__icon--bed">
+										<use xlink:href="img/sprite.svg#icon-bed"></use>
+									</svg>
+									<div class="search-dropdown__text">
+										<h3 class="search-dropdown__hotel-name">Jumeirah Beach Hotel</h3>
+										<div class="search-dropdown__location-container">
+											<svg class="search-dropdown__icon--pin">
+												<use xlink:href="img/sprite.svg#icon-location-pin"></use>
+											</svg>
+											<span class="search-dropdown__location">Dubai, United Arab Emirates</span>
+										</div>
+									</div>
+									<span class="search-dropdown__rating">9.3</span>
+								</a>
+							</li>
+							<li class="search-dropdown__item">
+								<a href="#" class="search-dropdown__link">
+									<svg class="search-dropdown__icon--bed">
+										<use xlink:href="img/sprite.svg#icon-bed"></use>
+									</svg>
+									<div class="search-dropdown__text">
+										<h3 class="search-dropdown__hotel-name">Disneyland Hotel</h3>
+										<div class="search-dropdown__location-container">
+											<svg class="search-dropdown__icon--pin">
+												<use xlink:href="img/sprite.svg#icon-location-pin"></use>
+											</svg>
+											<span class="search-dropdown__location">Chessy, France</span>
+										</div>
+									</div>
+									<span class="search-dropdown__rating">7.9</span>
+								</a>
+							</li>
+							<li class="search-dropdown__item">
+								<a href="#" class="search-dropdown__link">
+									<svg class="search-dropdown__icon--bed">
+										<use xlink:href="img/sprite.svg#icon-bed"></use>
+									</svg>
+									<div class="search-dropdown__text">
+										<h3 class="search-dropdown__hotel-name">Lexis Suites Penang</h3>
+										<div class="search-dropdown__location-container">
+											<svg class="search-dropdown__icon--pin">
+												<use xlink:href="img/sprite.svg#icon-location-pin"></use>
+											</svg>
+											<span class="search-dropdown__location">Georgetown, Malaysia</span>
+										</div>
+									</div>
+									<span class="search-dropdown__rating">9.1</span>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</form>
 
 				<nav class="user-nav">
@@ -31,15 +105,115 @@
 						</svg>
 						<span class="user-nav__notification">7</span>
 					</div>
+
 					<div class="user-nav__icon-box">
-						<svg class="user-nav__icon">
-							<use xlink:href="img/sprite.svg#icon-chat"></use>
-						</svg>
-						<span class="user-nav__notification">13</span>
+						<label for="toggle-chat" class="user-nav__checkbox-chat">
+							<svg class="user-nav__icon">
+								<use xlink:href="img/sprite.svg#icon-chat"></use>
+							</svg>
+							<span class="user-nav__notification">13</span>
+						</label>
+						<input type="checkbox" id="toggle-chat" class="user-nav__input user-nav__input--chat" />
+
+						<!-- CHAT DROPDOWN PREVIEWS -->
+						<div class="messages drop-down">
+							<ul class="messages__list">
+								<li class="messages__item unread">
+									<a href="#" class="messages__link">
+										<img src="img/user-3.jpg" alt="Messenger photo" class="messages__photo" />
+										<div class="messages__text">
+											<p class="messages__name">Bryan Clinton</p>
+											<p class="messages__content">Dude this hotel is so nice ...</p>
+										</div>
+										<div class="messages__timestamp">
+											<p class="messages__time">1:00pm</p>
+											<p class="messages__read-circle">&nbsp;</p>
+										</div>
+									</a>
+								</li>
+								<li class="messages__item unread">
+									<a href="#" class="messages__link">
+										<img src="img/user-5.jpg" alt="Messenger photo" class="messages__photo" />
+										<div class="messages__text">
+											<p class="messages__name">Louis Conway</p>
+											<p class="messages__content">Hey I think we should book ...</p>
+										</div>
+										<div class="messages__timestamp">
+											<p class="messages__time">11:23am</p>
+											<p class="messages__read-circle">&nbsp;</p>
+										</div>
+									</a>
+								</li>
+								<li class="messages__item">
+									<a href="#" class="messages__link">
+										<img src="img/user-6.jpg" alt="Messenger photo" class="messages__photo" />
+										<div class="messages__text">
+											<p class="messages__name">Rachel Goodall</p>
+											<p class="messages__content">I don't want to spend ...</p>
+										</div>
+										<div class="messages__timestamp">
+											<p class="messages__time">Fri</p>
+											<p class="messages__read-circle">&nbsp;</p>
+										</div>
+									</a>
+								</li>
+								<li class="messages__item">
+									<a href="#" class="messages__link">
+										<img src="img/user-2.jpg" alt="Messenger photo" class="messages__photo" />
+										<div class="messages__text">
+											<p class="messages__name">Afton Shapiro</p>
+											<p class="messages__content">Call me when you get a ...</p>
+										</div>
+										<div class="messages__timestamp">
+											<p class="messages__time">Wed</p>
+											<p class="messages__read-circle">&nbsp;</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="messages__button-box">
+								<button class="messages__button">See all</button>
+								<button class="messages__button">Mark All as Read</button>
+							</div>
+						</div>
 					</div>
+
 					<div class="user-nav__user">
-						<img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo" />
-						<span class="user-nav__user-name">Prakash</span>
+						<label for="toggle-user" class="user-nav__checkbox-user">
+							<img src="img/user.jpg" alt="User photo" class="user-nav__user-photo" />
+							<span class="user-nav__user-name">Prakash</span>
+						</label>
+						<input type="checkbox" id="toggle-user" class="user-nav__input user-nav__input--user" />
+
+						<!-- ACCOUNT DROPDOWN MENU -->
+						<div class="profile-menu drop-down">
+							<ul class="profile-menu__list">
+								<li class="profile-menu__item">
+									<a href="#" class="profile-menu__link">
+										<svg class="profile-menu__icon">
+											<use xlink:href="img/sprite.svg#icon-user"></use>
+										</svg>
+										<span>Profile</span>
+									</a>
+								</li>
+								<li class="profile-menu__item">
+									<a href="#" class="profile-menu__link">
+										<svg class="profile-menu__icon">
+											<use xlink:href="img/sprite.svg#icon-cog"></use>
+										</svg>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li class="profile-menu__item">
+									<a href="#" class="profile-menu__link">
+										<svg class="profile-menu__icon">
+											<use xlink:href="img/sprite.svg#icon-log-out"></use>
+										</svg>
+										<span>Log Out</span>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</nav>
 			</header>
@@ -55,7 +229,6 @@
 								<span>Hotel</span>
 							</a>
 						</li>
-
 						<li class="side-nav__item">
 							<a href="#" class="side-nav__link">
 								<svg class="side-nav__icon">
@@ -64,7 +237,6 @@
 								<span>Flight</span>
 							</a>
 						</li>
-
 						<li class="side-nav__item">
 							<a href="#" class="side-nav__link">
 								<svg class="side-nav__icon">
@@ -73,7 +245,6 @@
 								<span>Car rental</span>
 							</a>
 						</li>
-
 						<li class="side-nav__item">
 							<a href="#" class="side-nav__link">
 								<svg class="side-nav__icon">
@@ -85,7 +256,7 @@
 					</ul>
 
 					<div class="legal">
-						&copy; 2020 by Prakash. All right reserved.
+						&copy; 2020 by Jen Speak. All rights reserved.
 					</div>
 				</nav>
 
@@ -93,12 +264,15 @@
 					<div class="gallery">
 						<figure class="gallery__item">
 							<img src="img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo" />
+							<figcaption class="gallery__caption">Nightlife</figcaption>
 						</figure>
 						<figure class="gallery__item">
 							<img src="img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo" />
+							<figcaption class="gallery__caption">Two Outdoor Pools</figcaption>
 						</figure>
 						<figure class="gallery__item">
 							<img src="img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo" />
+							<figcaption class="gallery__caption">Stunning sunset views</figcaption>
 						</figure>
 					</div>
 
@@ -106,7 +280,6 @@
 						<h1 class="overview__heading">
 							Hotel Las Palmas
 						</h1>
-
 						<div class="overview__stars">
 							<svg class="overview__icon-star">
 								<use xlink:href="img/sprite.svg#icon-star"></use>
@@ -134,7 +307,7 @@
 
 						<div class="overview__rating">
 							<div class="overview__rating-average">8.6</div>
-							<div class="overview__rating-counts">429 votes</div>
+							<div class="overview__rating-count">429 votes</div>
 						</div>
 					</div>
 
@@ -145,7 +318,6 @@
 								ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae
 								architecto voluptate.
 							</p>
-
 							<p class="paragraph">
 								Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus,
 								inventore iure aliquid aliquam.
@@ -160,10 +332,9 @@
 								<li class="list__item">We speak all languages</li>
 								<li class="list__item">Perfect for families</li>
 							</ul>
-
 							<div class="recommend">
 								<p class="recommend__count">
-									Lucy and 3 other friends recommended this hotel.
+									Lucy and 3 other friends recommend this hotel.
 								</p>
 								<div class="recommend__friends">
 									<img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo" />
@@ -183,10 +354,8 @@
 								<figcaption class="review__user">
 									<img src="img/user-1.jpg" alt="User 1" class="review__photo" />
 									<div class="review__user-box">
-										<p class="review__user-name">
-											Nick Smith
-										</p>
-										<p class="review__user-date">Feb 23rd, 2020</p>
+										<p class="review__user-name">Nick Smith</p>
+										<p class="review__user-date">May 30th, 2020</p>
 									</div>
 									<div class="review__rating">7.8</div>
 								</figcaption>
@@ -200,10 +369,8 @@
 								<figcaption class="review__user">
 									<img src="img/user-2.jpg" alt="User 2" class="review__photo" />
 									<div class="review__user-box">
-										<p class="review__user-name">
-											Mary Thomas
-										</p>
-										<p class="review__user-date">Sep 13th, 2020</p>
+										<p class="review__user-name">Mary Thomas</p>
+										<p class="review__user-date">June 12th, 2020</p>
 									</div>
 									<div class="review__rating">9.3</div>
 								</figcaption>
@@ -215,9 +382,8 @@
 
 					<div class="cta">
 						<h2 class="cta__book-now">
-							Good news! We have 4 free rooms for your selected dates!
+							Good news! We have 4 available rooms for your selected dates!
 						</h2>
-
 						<button class="btn">
 							<span class="btn__visible">Book now</span>
 							<span class="btn__invisible">Only 4 rooms left</span>
