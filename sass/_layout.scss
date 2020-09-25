@@ -4,6 +4,8 @@
 	background-color: var(--color-grey-light-1);
 	box-shadow: var(--shadow-dark);
 
+	min-height: 50rem;
+
 	@media only screen and (max-width: $bp-largest) {
 		margin: 0;
 		max-width: 100%;
@@ -12,19 +14,19 @@
 }
 
 .header {
-	font-size: 1.4rem;
 	height: 7rem;
 	background-color: #fff;
 	border-bottom: var(--line);
+	font-size: 1.4rem;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
 	@media only screen and (max-width: $bp-smallest) {
 		flex-wrap: wrap;
-		align-content: space-around;
 		height: 11rem;
-		background-color: var(--color-grey-light-2);
+		align-content: space-around;
 	}
 }
 
@@ -49,7 +51,7 @@
 .hotel-view {
 	background-color: #fff;
 
-	flex: 1;
+	flex: 1; //means the element should grow over all of the available space
 }
 
 .detail {
@@ -72,7 +74,7 @@
 	background-color: #fff;
 	box-shadow: var(--shadow-light);
 	padding: 3rem;
-	flex: 0 0 60%;
+	flex: 0 0 60%; //usually when we set flex-basis to a percentage, we set the other two values to 0
 	margin-right: 4.5rem;
 
 	@media only screen and (max-width: $bp-medium) {
@@ -88,6 +90,7 @@
 
 .user-reviews {
 	flex: 1;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
